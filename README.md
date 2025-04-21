@@ -85,7 +85,7 @@ df = df.drop_duplicates()
 ```
 ![image](https://github.com/user-attachments/assets/b5d85b33-55ea-40fd-a84d-cfad887fe8ed)
 
-BOXPLOT METHOD:
+**BOXPLOT METHOD:**
 
 ```
 plt.figure(figsize=(15, 5))
@@ -107,7 +107,7 @@ plt.show()
 ```
 ![image](https://github.com/user-attachments/assets/1f10266f-d580-4d83-8cf6-d815d22170cf)
 
-IQR METHOD:
+**IQR METHOD:**
 ```
 def remove_outliers_iqr(data, column):
     Q1 = data[column].quantile(0.25)
@@ -123,7 +123,7 @@ df = remove_outliers_iqr(df, 'KM')
 ```
 ![image](https://github.com/user-attachments/assets/3de34be7-be03-4829-82e4-20624984ea56)
 
-COUNT PLOT:
+**COUNT PLOT:**
 ```
 plt.figure(figsize=(6, 4))
 sns.countplot(x='FuelType', data=df, palette='Set2')
@@ -132,7 +132,7 @@ plt.show()
 ```
 ![image](https://github.com/user-attachments/assets/1433572c-4e14-471a-8e6c-45bb08506606)
 
-DISPLOT:
+**DISPLOT:**
 ```
 plt.figure(figsize=(10, 6))
 sns.histplot(data=df, x='Price', hue='FuelType', kde=True, palette='husl')
@@ -141,6 +141,6 @@ plt.show()
 ```
 ![image](https://github.com/user-attachments/assets/48ba8cd7-0c64-4152-89db-4c399d1f8e1e)
 
-RESULT:
+## RESULT:
 
 The program was successfully executed. Data was cleaned, outliers were detected and removed using boxplot and IQR methods, and both univariate and multivariate analyses were performed using count plot and distplot.
